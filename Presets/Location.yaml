@@ -655,7 +655,7 @@ presets:
 
     HatenoVillage:
       presets: _Location<ハテノ村,1>
-      coord: [2283.39, 218.51, 768.77]
+      coord: [3598.36, 252.52, 2137.68]
 
     HatenoAncientTechLab:
       presets: _Location<ハテノ古代研究所,1>
