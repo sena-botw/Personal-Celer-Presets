@@ -10,7 +10,7 @@ icons:
   kill: https://icons.pistonite.org/icon/shrine.double_sword.none.f24c99.ffc0fa.f24c99.ffc0fa.f24c99.ffc0fa.png
   npc: https://icons.pistonite.org/icon/character.terrako.none.568c28.c8e6af.568c28.fdfdfd.568c28.fdfdfd.png
   cook: https://icons.pistonite.org/icon/misc.pot.none.69a2d5.c1fefe.8c5e28.ffffb5.8c5e28.ffffb5.png
-  set-time: https://icons.pistonite.org/icon/misc.pot.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+  sit: https://icons.pistonite.org/icon/misc.pot.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
   camera: https://icons.pistonite.org/icon/rune.camera.none.69a2d5.c1fefe.8c5e28.ffffb5.8c5e28.ffffb5.png
   snap: https://icons.pistonite.org/icon/rune.camera.none.568c28.c8e6af.568c28.c8e6af.568c28.c8e6af.png
   shop: https://icons.pistonite.org/icon/location.house.circle.8c5e28.ff9900.8c5e28.ff9900.8c5e28.fdfdfd.png
@@ -115,6 +115,20 @@ presets:
   snap:
     text: 写真 - $(0)
     icon: snap
+
+  Sit:
+    text: $(0)
+    icon-doc: sit
+  
+  _Sit:
+    Morning:
+      presets: _Sit<朝にする>
+
+    Noon:
+      presets: _Sit<昼にする>
+
+    Night:
+      presets: _Sit<夜にする>
 
 splits:
   - user-defined-split
