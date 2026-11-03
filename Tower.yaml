@@ -1,0 +1,92 @@
+icons:
+  tower: https://icons.pistonite.org/icon/location.tower.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+
+tags:
+  counter-tower:
+    color: black
+    background: cyan
+    split-type: Tower
+
+splits:
+  - counter-tower
+
+presets:
+  Tower:
+    presets: _Map%::addTower::Fraction<notes>
+    text: .cyan($(0))
+    icon: tower
+    icon-priority: 0
+    coord: [$(1),$(2),$(3)]
+    counter: .var(counter-tower)
+
+  TowerMap%:
+    presets: _Map%::addTower::Fraction::Decimal<notes>
+    text: '.var(pad 3:last3:map-floor).val(.).var(pad02:last2:map-mul-100).val(%) .cyan($(0))'
+    icon: tower
+    icon-priority: 0
+    coord: [$(1),$(2),$(3)]
+    counter: .var(counter-tower)
+
+  _Tower:
+      GreatPlateau:
+        presets: _Tower<始まりの塔,-560.03,177.64,1694.86>
+      Central:
+        presets: _Tower<平原の塔,-788.64,197.64,442.03>
+      Lake:
+        presets: _Tower<湖の塔,-31.82,280.48,2961.60>
+      DuelingPeaks:
+        presets: _Tower<双子山の塔,1016.78,184.01,1714.08>
+      Faron:
+        presets: _Tower<フィローネの塔,1331.20,269.93,3273.72>
+      Hateno:
+        presets: _Tower<ハテノ塔,2735.50,336.18,2133.50>
+      Lanayru:
+        presets: _Tower<ラネールの塔,2258.00,310.92,-109.00>
+      Eldin:
+        presets: _Tower<オルディンの塔,2174.15,508.73,-1556.78>
+      Woodland:
+        presets: _Tower<森林の塔,883.88,350.22,-1605.71>
+      Akkala:
+        presets: _Tower<アッカレの塔,3308.00,593.78,-1500.10>
+      Tabantha:
+        presets: _Tower<タバンタの塔,-3613.75,445.04,-990.16>
+      Gerudo:
+        presets: _Tower<ゲルドの塔,-3666.00,470.98,1828.60>
+      Wasteland:
+        presets: _Tower<荒野の塔,-2306.84,530.18,2437.32>
+      Hebra:
+        presets: _Tower<ヘブラの塔,-2173.00,529.18,-2034.00>
+      Ridgeland:
+        presets: _Tower<丘陵の塔,-1755.30,328.58,-774.30>
+
+  _TowerMap%:
+      GreatPlateau:
+        presets: _TowerMap%<始まりの塔,-560.03,177.64,1694.86>
+      Central:
+        presets: _TowerMap%<平原の塔,-788.64,197.64,442.03>
+      Lake:
+        presets: _TowerMap%<湖の塔,-31.82,280.48,2961.60>
+      DuelingPeaks:
+        presets: _TowerMap%<双子山の塔,1016.78,184.01,1714.08>
+      Faron:
+        presets: _TowerMap%<フィローネの塔,1331.20,269.93,3273.72>
+      Hateno:
+        presets: _TowerMap%<ハテノ塔,2735.50,336.18,2133.50>
+      Lanayru:
+        presets: _TowerMap%<ラネールの塔,2258.00,310.92,-109.00>
+      Eldin:
+        presets: _TowerMap%<オルディンの塔,2174.15,508.73,-1556.78>
+      Woodland:
+        presets: _TowerMap%<森林の塔,883.88,350.22,-1605.71>
+      Akkala:
+        presets: _TowerMap%<アッカレの塔,3308.00,593.78,-1500.10>
+      Tabantha:
+        presets: _TowerMap%<タバンタの塔,-3613.75,445.04,-990.16>
+      Gerudo:
+        presets: _TowerMap%<ゲルドの塔,-3666.00,470.98,1828.60>
+      Wasteland:
+        presets: _TowerMap%<荒野の塔,-2306.84,530.18,2437.32>
+      Hebra:
+        presets: _TowerMap%<ヘブラの塔,-2173.00,529.18,-2034.00>
+      Ridgeland:
+        presets: _TowerMap%<丘陵の塔,-1755.30,328.58,-774.30>

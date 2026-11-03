@@ -1,0 +1,61 @@
+icons:
+  memory: https://icons.pistonite.org/icon/character.zelda.none.8c5e28.ffffb5.8c5e28.ffffb5.8c5e28.ffffb5.png
+  memory-final: https://icons.pistonite.org/icon/character.zelda.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+
+tags:
+  counter-memory:
+    color: black
+    background: orange
+    split-type: Memory
+
+presets:
+  Memory:
+    text: '記憶 - .cyan($(0))'
+    icon: memory
+    icon-priority: 0
+    counter: .var(counter-memory)
+    coord: [$(1),$(2),$(3)]
+
+  _Memory:
+    SacredGroundRuins:
+      presets: _Memory<式典場跡,-254.14, 127.42, -97.91>
+
+    LakeKolomo:
+      presets: _Memory<コモロ池,-681.08, 131.59, 1223.99>
+
+    AncientColumns:
+      presets: _Memory<古代石柱群,-3501.04, 383.73, -421.26>
+
+    KaraKaraBazaar:
+      presets: _Memory<カラカラバザール,-3193.41, 129.51, 2536.24>
+
+    EldinCanyon:
+      presets: _Memory<オルディン峡谷,1417.29, 466.78, -1537.95>
+
+    IrchPlain:
+      presets: _Memory<バーチ平原,-1091.22, 232.47, -1301.68>
+
+    WestNecluda:
+      presets: _Memory<西ハテール,173.27, 150.50, 1935.49>
+
+    HyruleCastle:
+      presets: _Memory<ハイラル城,-364.47, 269.88, -995.87>
+
+    SpringofPower:
+      presets: _Memory<力の泉,3744.00, 109.06, -2655.89>
+
+    SanidinParkRuins:
+      presets: _Memory<サーディン公園跡,-1612.42, 246.33, 688.02>
+
+    LanayruRoadEastGate:
+      presets: _Memory<ラネール参道東口,3143.34, 263.09, 1148.49>
+
+    HyruleField:
+      presets: _Memory<ハイラル平原,700.66, 115.96, 434.43>
+
+    Final:
+      text: .cyan(最後の記憶)
+      icon: memory-final
+      icon-priority: 0
+      counter: .var(counter-memory)
+      coord: [1983.90, 124.12, 1912.69]

@@ -1,0 +1,32 @@
+icons:
+  zora: https://icons.pistonite.org/icon/character.sidon.none.69a2d5.c1fefe.69a2d5.fdfdfd.69a2d5.fdfdfd.png
+
+presets:
+  ZoraStone:
+    text: ゾーラの石碑($(0))
+    icon: zora
+    vars:
+      zorastone: .add(1)
+    comment: .var(zorastone)/10
+    coord: [$(1),$(2),$(3)]
+  _ZoraStone:
+    1:
+      presets: _ZoraStone<1,2868.11, 249.51, -68.34>
+    2:
+      presets: _ZoraStone<2,2877.09, 229.49, -32.75>
+    3:
+      presets: _ZoraStone<3,3062.39, 184.92, -216.65>
+    4:
+      presets: _ZoraStone<4,3099.83, 236.67, 70.72>
+    5:
+      presets: _ZoraStone<5,2838.09, 228.01, 188.33>
+    6:
+      presets: _ZoraStone<6,3393.74, 314.18, 49.77>
+    7:
+      presets: _ZoraStone<7,3265.50, 341.84, 38.70>
+    8:
+      presets: _ZoraStone<8,3260.31, 241.83, -145.22>
+    9:
+      presets: _ZoraStone<9,3720.59, 461.92, -532.05>
+    10:
+      presets: _ZoraStone<10,3207.40, 344.67, -736.45>

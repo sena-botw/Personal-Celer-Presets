@@ -1,0 +1,11 @@
+includes:
+  - use: ./Basic.yaml
+  - use: ./Boss.yaml
+  - use: ./Korok.yaml
+  - use: ./Location.yaml
+  - use: ./Mappct.yaml
+  - use: ./Memory.yaml
+  - use: ./Shrine.yaml
+  - use: ./Tower.yaml
+  - use: ./Warp.yaml
+  - use: ./ZoraStone.yaml

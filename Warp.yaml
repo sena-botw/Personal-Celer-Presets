@@ -1,0 +1,342 @@
+icons:
+  warp: https://icons.pistonite.org/icon/location.travel_medallion.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+
+presets:
+  Warp3:
+    text: 'ワープ. .cyan($(0))'
+    icon: warp
+    movements:
+      - to: [$(1),$(2),$(3)]
+        warp: true
+    comment: .dir([$(4)])
+  Warp:
+    text: 'ワープ. .cyan($(0))'
+    icon: warp
+    movements:
+      - to: [$(1),$(2)]
+        warp: true
+    comment: .dir([$(3)])
+  _Warp:
+    _TechLab:
+      Akkala:
+        presets: _Warp<アッカレ古代研究所,4522.01,3166.63,$(0)>
+      Hateno:
+        presets: _Warp<ハテノ古代研究所,3777.71,2127.36,$(0)>
+    _Beast:
+      Medoh:
+        presets: _Warp<ヴァ・メドー,-3614.10,-1862.06,$(0)>        
+      Naboris:
+        presets: _Warp<ヴァ・ナボリス,-2110.15,2616.95,$(0)>        
+      Rudania: 
+        presets: _Warp<ヴァ・ルーダニア,2451.85,-2559.08,$(0)>        
+      Ruta:
+        presets: _Warp<ヴァ・ルッタ,2970.18,235.47,$(0)>        
+    SOR:
+      presets: _Warp<回生の祠,-1099.10,1876.31,$(0)>      
+    TravelMedallion:
+      presets: _Warp<ワープマーカー,$(0),$(1),$(2)>
+    _Tower:
+      GreatPlateau:
+        presets: _Warp3<始まりの塔,-560.03,177.64,1694.86,$(0)>
+      Central:
+        presets: _Warp3<平原の塔,-788.64,197.64,442.03,$(0)>
+      Lake:
+        presets: _Warp3<湖の塔,-31.82,280.48,2961.60,$(0)>
+      DuelingPeaks:
+        presets: _Warp3<双子山の塔,1016.78,184.01,1714.08,$(0)>
+      Faron:
+        presets: _Warp3<フィローネの塔,1331.20,269.93,3273.72,$(0)>
+      Hateno:
+        presets: _Warp3<ハテノ塔,2735.50,336.18,2133.50,$(0)>
+      Lanayru:
+        presets: _Warp3<ラネールの塔,2258.00,310.92,-109.00,$(0)>
+      Eldin:
+        presets: _Warp3<オルディンの塔,2174.15,508.73,-1556.78,$(0)>
+      Woodland:
+        presets: _Warp3<森林の塔,883.88,350.22,-1605.71,$(0)>
+      Akkala:
+        presets: _Warp3<アッカレの塔,3308.00,593.78,-1500.10,$(0)>
+      Tabantha:
+        presets: _Warp3<タバンタの塔,-3613.75,445.04,-990.16,$(0)>
+      Gerudo:
+        presets: _Warp3<ゲルドの塔,-3666.00,470.98,1828.60,$(0)>
+      Wasteland:
+        presets: _Warp3<荒野の塔,-2306.84,530.18,2437.32,$(0)>
+      Hebra:
+        presets: _Warp3<ヘブラの塔,-2173.00,529.18,-2034.00,$(0)>
+      Ridgeland:
+        presets: _Warp3<丘陵の塔,-1755.30,328.58,-774.30,$(0)>
+    _Shrine:
+      JaBaij:
+        presets: _Warp3<ジャ・バシフ,-446.7,180.02,1990.18,$(0)>
+      OmanAu:
+        presets: _Warp3<マ・オーヌ,-673.25,173.09,1513.01,$(0)>
+      OwaDaim:
+        presets: _Warp3<ワ・モダイ,-925.03,274.17,2321.23,$(0)>
+      KehNamut:
+        presets: _Warp3<トゥミ・ンケ,-1436.35,337.58,1990.99,$(0)>
+      AkhVaquot:
+        presets: _Warp3<アコ・ヴァータ,-3656.13,321.74,-1756.7,$(0)>
+      BareedaNaag:
+        presets: _Warp3<ヴォリダ・ノ,-3609.19,246.74,-1515.4,$(0)>
+      BoshKala:
+        presets: _Warp3<ヴァシ・リャコ,87.02,122.52,1658.71,$(0)>
+      ChaasQeta:
+        presets: _Warp3<チャス・ケタ,4012.19,107.18,2990.54,$(0)>
+      DaagChokah:
+        presets: _Warp3<ダ・チョカヒ,-26.43,280.34,-2458.63,$(0)>
+      DagahKeek:
+        presets: _Warp3<ダ・キキー,3149.7,280.0,-416.8,$(0)>
+      DahHesho:
+        presets: _Warp3<ダヒ・シーノ,3899.52,354.77,-1302.81,$(0)>
+      DahKaso:
+        presets: _Warp3<ダ・カソー,-1695.29,68.84,1700.12,$(0)>
+      DakaTuss:
+        presets: _Warp3<ダタ・クス,1601.0,117.7,462.2,$(0)>
+      DaqaKoh:
+        presets: _Warp3<ダカ・カ,2065.85,598.01,-2328.36,$(0)>
+      DaqoChisay:
+        presets: _Warp3<グコ・チセ,-3817.03,150.45,2819.85,$(0)>
+      DakoTah:
+        presets: _Warp3<ダコ・タワ,-3317.78,146.11,2162.48,$(0)>
+      DilaMaag:
+        presets: _Warp3<ディラ・マ,-1795.0,164.18,3465.39,$(0)>
+      DowNaeh:
+        presets: _Warp3<ダウ・ナエ,2697.65,220.94,1333.48,$(0)>
+      DunbaTaag:
+        presets: _Warp3<ドゥンバ・タ,-2832.47,79.88,-1578.04,$(0)>
+      EtsuKorima:
+        presets: _Warp3<エツィ・コリマ,-1216.12,340.5,2109.9,$(0)>
+      GeeHarah:
+        presets: _Warp3<ノッキ・ミヒ,-2379.84,278.11,-2254.59,$(0)>
+      GomaAsaagh:
+        presets: _Warp3<ガオマ・アサ,-2792.31,671.02,-2882.31,$(0)>
+      GoraeTorr:
+        presets: _Warp3<グ・アチトー,2662.0,470.0,-3456.5,$(0)>
+      HaDahamar:
+        presets: _Warp3<ハユ・ダマ,1662.36,115.52,1921.6,$(0)>
+      HawaKoth:
+        presets: _Warp3<ハワ・カイ,-4847.04,123.74,3772.63,$(0)>
+      HiaMiu:
+        presets: _Warp3<ヒャ・ミウ,-4446.8,329.85,-3803.04,$(0)>
+      HilaRao:
+        presets: _Warp3<ヒロ・ヒラ,854.73,116.93,838.06,$(0)>
+      IshtoSoh:
+        presets: _Warp3<イオ・ソオ,-984.79,321.22,3564.99,$(0)>
+      JeeNoh:
+        presets: _Warp3<ジノ・ヨー,-1792.83,112.85,2423.39,$(0)>
+      JitanSami:
+        presets: _Warp3<ジター・サミ,3882.12,572.81,1314.94,$(0)>
+      JolooNah:
+        presets: _Warp3<ジュニ・シ,-2004.01,231.65,1674.26,$(0)>
+      KaamYatak:
+        presets: _Warp3<ヤカー・マタ,-967.8,127.67,715.89,$(0)>
+      KahMael:
+        presets: _Warp3<カ・ムー,4709.2,242.5,-1310.29,$(0)>
+      KahOkeo:
+        presets: _Warp3<カ・オキョ,-4120.41,184.29,-414.37,$(0)>
+      KahYah:
+        presets: _Warp3<マ・カヤ,3436.89,120.68,3316.28,$(0)>
+      KamUrog:
+        presets: _Warp3<カム・ユオ,2501.03,119.17,1494.84,$(0)>
+      KamiaOmuna:
+        presets: _Warp3<カミラ・オムナ,2128.36,509.92,-3228.81,$(0)>
+      KaoMakagh:
+        presets: _Warp3<カオ・マカ,523.29,178.91,3526.27,$(0)>
+      KatahChuki:
+        presets: _Warp3<カタ・チュキ,-636.41,128.87,-345.11,$(0)>
+      KatosaAug:
+        presets: _Warp3<カツ・トサ,4295.79,237.42,-2730.34,$(0)>
+      KayNoh:
+        presets: _Warp3<ケー・ノイ,-2810.96,172.01,2300.08,$(0)>
+      KayaWan:
+        presets: _Warp3<カヤ・ミワ,824.21,132.88,187.79,$(0)>
+      KayraMah:
+        presets: _Warp3<ケハ・ラマ,2076.82,520.77,-2039.77,$(0)>
+      KeeDafunia:
+        presets: _Warp3<キオ・ダフナ,4935.17,106.8,-1002.4,$(0)>
+      KeehaYoog:
+        presets: _Warp3<キハ・ウ,-3853.4,640.3,716.7,$(0)>
+      KeiveTala:
+        presets: _Warp3<ケーベ・タワ,-2339.53,129.5,3901.64,$(0)>
+      KemaKosassa:
+        presets: _Warp3<キマ・コササ,-4658.48,619.49,904.84,$(0)>
+      KemaZoos:
+        presets: _Warp3<キマ・ズース,-4673.53,132.12,1967.79,$(0)>
+      KenaiShakah:
+        presets: _Warp3<ケニィ・シカ,4194.49,323.11,-856.88,$(0)>
+      KeoRuug:
+        presets: _Warp3<キヨ・ウー,470.7,250.15,-2168.79,$(0)>
+      KetohWawai:
+        presets: _Warp3<キト・ワワイ,283.4,285.3,-3119.6,$(0)>
+      KiahToza:
+        presets: _Warp3<キハ・トゥサ,-2155.49,450.4,-3188.48,$(0)>
+      KihiroMoh:
+        presets: _Warp3<キヒロテ・モー,-3391.23,441.98,1347.84,$(0)>
+      KorguChideh:
+        presets: _Warp3<クグ・チデ,4737.48,218.0,3772.09,$(0)>
+      KorshOhu:
+        presets: _Warp3<キョシ・オー,-2688.6,105.01,2811.2,$(0)>
+      KuhTakkar:
+        presets: _Warp3<クイ・タッカ,-3083.0,571.55,1221.0,$(0)>
+      KuhnSidajj:
+        presets: _Warp3<クン・シダジ,17.73,281.4,-1944.4,$(0)>
+      LaknaRokee:
+        presets: _Warp3<ラーナ・ロキ,2040.49,286.03,972.22,$(0)>
+      LannoKooh:
+        presets: _Warp3<ラノ・クヒー,-2636.37,446.03,-2060.36,$(0)>
+      MaagHalan:
+        presets: _Warp3<マーム・ラノ,837.06,282.2,-2419.72,$(0)>
+      MaagNorah:
+        presets: _Warp3<マ・ノラ,-1939.9,249.88,-1458.2,$(0)>
+      MahEliya:
+        presets: _Warp3<マウ・エルーヤ,3762.2,547.78,-646.45,$(0)>
+      MakaRah:
+        presets: _Warp3<カマ・ラヒ,-4057.84,94.89,-2508.37,$(0)>
+      MezzaLo:
+        presets: _Warp3<ミーズー・ヨ,2621.6,249.39,378.23,$(0)>
+      MijahRokee:
+        presets: _Warp3<ミッダ・ロキ,-2743.27,309.39,226.44,$(0)>
+      MirroShaz:
+        presets: _Warp3<ミーロ・ツヒ,1232.0,127.55,-1212.75,$(0)>
+      MisaeSuma:
+        presets: _Warp3<ミィ・スゥ,-2970.3,137.67,3781.5,$(0)>
+      MoaKeet:
+        presets: _Warp3<モア・キシト,2723.5,285.41,-1166.08,$(0)>
+      MoggLatan:
+        presets: _Warp3<モ・ラタニア,-2297.43,439.57,460.73,$(0)>
+      MonyaToma:
+        presets: _Warp3<モンヤ・トマ,-1488.6,275.22,-1473.03,$(0)>
+      MozoShenno:
+        presets: _Warp3<ミョス・シノ,-3627.71,420.82,-3038.22,$(0)>
+      MuwoJeem:
+        presets: _Warp3<ムオ・ジーム,3658.13,350.34,3308.26,$(0)>
+      MyahmAgana:
+        presets: _Warp3<ミャマ・ガナ,3388.41,242.59,2215.84,$(0)>
+      NamikaOzz:
+        presets: _Warp3<ナミカ・オズ,761.29,188.72,-821.3,$(0)>
+      NeezYohma:
+        presets: _Warp3<ネヅ・ヨマ,3323.58,239.28,-518.83,$(0)>
+      NoeRajee:
+        presets: _Warp3<ノイエ・ロジー,-3820.27,89.77,-2311.2,$(0)>
+      NoyaNeha:
+        presets: _Warp3<ニア・ネア,-951.18,134.36,-623.76,$(0)>
+      PumaagNitae:
+        presets: _Warp3<プマ・ニット,559.53,118.04,2990.19,$(0)>
+      QazaTokki:
+        presets: _Warp3<カザ・トッキ,-820.5,341.3,-3535.0,$(0)>
+      QuaRaym:
+        presets: _Warp3<キュ・ラムヒ,1820.74,388.29,-1517.04,$(0)>
+      QukahNata:
+        presets: _Warp3<キュカ・ナタ,2007.0,301.5,3285.0,$(0)>
+      RaqaZunzo:
+        presets: _Warp3<ラキュ・ウロ,-3810.5,159.3,3127.2,$(0)>
+      ReeDahee:
+        presets: _Warp3<リ・ダヒ,1271.93,137.68,1843.74,$(0)>
+      RinOyaa:
+        presets: _Warp3<リ・モナ,-1721.37,335.74,-2554.46,$(0)>
+      RinuHonika:
+        presets: _Warp3<リノ・ヒミカ,2241.35,541.82,-1995.7,$(0)>
+      RitaagZumo:
+        presets: _Warp3<リター・ズモ,4524.6,107.77,-2127.5,$(0)>
+      RohtaChigah:
+        presets: _Warp3<ロヒッタ・チグ,-517.17,173.8,1798.4,$(0)>
+      RokUwog:
+        presets: _Warp3<ラー・クア,-2378.01,485.91,-3224.74,$(0)>
+      RonaKachta:
+        presets: _Warp3<ロナ・カータ,-1088.16,22.05,-2661.51,$(0)>
+      RotaOoh:
+        presets: _Warp3<ルヨ・タウ,-1563.25,186.73,1310.07,$(0)>
+      RuccoMaag:
+        presets: _Warp3<ルッコ・マ,3333.5,119.0,401.5,$(0)>
+      RuvoKorbah:
+        presets: _Warp3<ルネ・コリバー,-834.56,189.8,2145.07,$(0)>
+      SaasKosah:
+        presets: _Warp3<サス・コサ,-147.4,144.22,-1159.35,$(0)>
+      SahDahaj:
+        presets: _Warp3<サ・ダージュ,2665.21,247.91,-1580.75,$(0)>
+      SasaKai:
+        presets: _Warp3<ササ・カイ,-3559.8,352.78,1953.0,$(0)>
+      SatoKoda:
+        presets: _Warp3<サタ・カダ,3102.94,542.91,-833.22,$(0)>
+      ShaGehma:
+        presets: _Warp3<シャ・ゲマ,-1673.17,346.57,-3758.45,$(0)>
+      ShaWarvo:
+        presets: _Warp3<シャ・タワ,-3823.08,265.12,-2206.36,$(0)>
+      ShadaNaw:
+        presets: _Warp3<シャダ・アダ,-2998.62,667.75,-3221.58,$(0)>
+      ShaeKatha:
+        presets: _Warp3<シ・クチョフ,870.34,122.99,2328.54,$(0)>
+      ShaeLoya:
+        presets: _Warp3<シャオ・ヨ,-2930.92,306.45,-432.05,$(0)>
+      ShaeMosah:
+        presets: _Warp3<シモ・イトセ,1757.22,535.32,-2562.46,$(0)>
+      ShaiUtoh:
+        presets: _Warp3<サイ・ウート,1586.72,166.99,3614.93,$(0)>
+      ShaiYota:
+        presets: _Warp3<シ・ヨタ,4245.54,110.92,252.95,$(0)>
+      SharoLun:
+        presets: _Warp3<シャド・ロン,2932.71,630.51,-2418.1,$(0)>
+      SheeVaneer:
+        presets: _Warp3<シベ・ニーロ,1265.27,525.87,1938.7,$(0)>
+      SheeVenath:
+        presets: _Warp3<シベ・ニャス,1244.13,443.37,1850.3,$(0)>
+      SheemDagoze:
+        presets: _Warp3<シ・ダゴズ,-1893.3,212.4,91.5,$(0)>
+      ShehRata:
+        presets: _Warp3<シェモ・ラタ,1510.45,128.41,-376.96,$(0)>
+      ShiraGomar:
+        presets: _Warp3<シリト・ゲオマ,-2376.74,264.97,-1382.98,$(0)>
+      ShoDantu:
+        presets: _Warp3<シ・ジト,-3911.26,396.0,1653.8,$(0)>
+      ShodaSah:
+        presets: _Warp3<ショダ・サー,1790.48,189.8,2991.89,$(0)>
+      ShoqaTatone:
+        presets: _Warp3<シ・タタンケ,94.0,110.67,3841.0,$(0)>
+      ShoraHah:
+        presets: _Warp3<ショラ・ハ,1535.38,507.33,-3118.03,$(0)>
+      SohKofi:
+        presets: _Warp3<サオ・コヒ,2238.42,148.48,-293.04,$(0)>
+      SumaSahma:
+        presets: _Warp3<スマ・サマ,-1418.2,545.4,3448.3,$(0)>
+      TahMuhl:
+        presets: _Warp3<タ・ムール,2300.66,213.35,-941.32,$(0)>
+      TakamaShiri:
+        presets: _Warp3<タタカマ・シミリ,-4895.49,141.98,2155.5,$(0)>
+      TalohNaeg:
+        presets: _Warp3<タロ・ニヒ,1841.92,260.1,890.4,$(0)>
+      TahnoOah:
+        presets: _Warp3<ターノ・ア,4181.78,288.15,1686.73,$(0)>
+      TawaJinn:
+        presets: _Warp3<タワ・ジヌ,2637.53,318.17,2834.39,$(0)>
+      TenaKosah:
+        presets: _Warp3<ティナ・キョザ,-3465.47,384.49,-447.97,$(0)>
+      ThoKayu:
+        presets: _Warp3<ト・カユー,-4799.14,135.13,2800.18,$(0)>
+      ToQuomo:
+        presets: _Warp3<ト・クモ,-4023.13,288.09,-3711.64,$(0)>
+      TohYahsa:
+        presets: _Warp3<トー・ヤッサ,-2269.1,216.58,-900.1,$(0)>
+      TotoSah:
+        presets: _Warp3<トト・イサ,1845.65,131.51,2474.15,$(0)>
+      TuKaloh:
+        presets: _Warp3<トゥ・カロ,4655.0,237.4,-3710.0,$(0)>
+      TutsuwaNima:
+        presets: _Warp3<ツツア・ニマ,3777.82,108.89,-2704.89,$(0)>
+      VooLota:
+        presets: _Warp3<ウータ・ド,-4016.18,275.2,-1721.91,$(0)>
+      WahgoKatta:
+        presets: _Warp3<ワゴ・カタ,344.91,123.08,1007.03,$(0)>
+      YaNaga:
+        presets: _Warp3<ヤ・ナーガ,-328.18,68.02,2600.29,$(0)>
+      YahRin:
+        presets: _Warp3<ヤオ・マーヨ,2833.36,152.75,3310.97,$(0)>
+      YowakaIta:
+        presets: _Warp3<ヨーワカ・イルタ,-941.14,187.7,1672.45,$(0)>
+      ZaltaWa:
+        presets: _Warp3<キワ・ザタス,-1432.3,138.32,-594.19,$(0)>
+      ZeKasho:
+        presets: _Warp3<ジズ・カフィ,3027.31,348.65,-1667.85,$(0)>
+      ZunaKai:
+        presets: _Warp3<ヅナ・カイ,3324.46,298.69,-3420.44,$(0)>
+      

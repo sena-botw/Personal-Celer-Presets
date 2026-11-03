@@ -1,0 +1,308 @@
+icons:
+  shrine: https://icons.pistonite.org/icon/shrine.shrine.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+  shrine-blessing: https://icons.pistonite.org/icon/shrine.blessing.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+  shrine-sword: https://icons.pistonite.org/icon/shrine.sword.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+  shrine-double-sword: https://icons.pistonite.org/icon/shrine.double_sword.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+  shrine-dlc: https://icons.pistonite.org/icon/shrine.dlc_shrine.none.8c5e28.ff9900.8c5e28.ff9900.8c5e28.ff9900.png
+
+tags:
+  counter-shrine:
+    color: black
+    background: cyan
+    split-type: Shrine
+  counter-dlc-shrine:
+    color: black
+    background: orange
+    split-type: DLC Shrine
+
+splits:
+  - counter-shrine
+  - counter-dlc-shrine
+
+presets:
+  Shrine:
+    text: ".var(counter-korok). .cyan($(0))"
+    icon: $(1)
+    icon-priority: 0
+    counter: .var(counter-shrine)
+    coord: [$(2), $(3), $(4)]
+  ShrineDlc:
+    text: ".var(counter-korok). .cyan($(0))"
+    icon: $(1)
+    icon-priority: 0
+    counter: .var(counter-dlc-shrine)
+    coord: [$(2), $(3), $(4)]
+  _Shrine:
+    JaBaij:
+      presets: _Shrine<ジャ・バシフ,shrine,-446.7,180.02,1990.18>
+    OmanAu:
+      presets: _Shrine<マ・オーヌ,shrine,-673.25,173.09,1513.01>
+    OwaDaim:
+      presets: _Shrine<ワ・モダイ,shrine,-925.03,274.17,2321.23>
+    KehNamut:
+      presets: _Shrine<トゥミ・ンケ,shrine,-1436.35,337.58,1990.99>
+    AkhVaquot:
+      presets: _Shrine<アコ・ヴァータ,shrine,-3656.13,321.74,-1756.7>
+    BareedaNaag:
+      presets: _Shrine<ヴォリダ・ノ,shrine,-3609.19,246.74,-1515.4>
+    BoshKala:
+      presets: _Shrine<ヴァシ・リャコ,shrine,87.02,122.52,1658.71>
+    ChaasQeta:
+      presets: _Shrine<チャス・ケタ,shrine-double-sword,4012.19,107.18,2990.54>
+    DaagChokah:
+      presets: _Shrine<ダ・チョカヒ,shrine-blessing,-26.43,280.34,-2458.63>
+    DagahKeek:
+      presets: _Shrine<ダ・キキー,shrine-blessing,3149.7,280.0,-416.8>
+    DahHesho:
+      presets: _Shrine<ダヒ・シーノ,shrine-double-sword,3899.52,354.77,-1302.81>
+    DahKaso:
+      presets: _Shrine<ダ・カソー,shrine-double-sword,-1695.29,68.84,1700.12>
+    DakaTuss:
+      presets: _Shrine<ダタ・クス,shrine,1601.0,117.7,462.2>
+    DaqaKoh:
+      presets: _Shrine<ダカ・カ,shrine,2065.85,598.01,-2328.36>
+    DaqoChisay:
+      presets: _Shrine<グコ・チセ,shrine,-3817.03,150.45,2819.85>
+    DakoTah:
+      presets: _Shrine<ダコ・タワ,shrine,-3317.78,146.11,2162.48>
+    DilaMaag:
+      presets: _Shrine<ディラ・マ,shrine-blessing,-1795.0,164.18,3465.39>
+    DowNaeh:
+      presets: _Shrine<ダウ・ナエ,shrine,2697.65,220.94,1333.48>
+    DunbaTaag:
+      presets: _Shrine<ドゥンバ・タ,shrine,-2832.47,79.88,-1578.04>
+    EtsuKorima:
+      presets: _ShrineDlc<エツィ・コリマ,shrine-dlc,-1216.12,340.5,2109.9>
+    GeeHarah:
+      presets: _Shrine<ノッキ・ミヒ,shrine,-2379.84,278.11,-2254.59>
+    GomaAsaagh:
+      presets: _Shrine<ガオマ・アサ,shrine-double-sword,-2792.31,671.02,-2882.31>
+    GoraeTorr:
+      presets: _Shrine<グ・アチトー,shrine-blessing,2662.0,470.0,-3456.5>
+    HaDahamar:
+      presets: _Shrine<ハユ・ダマ,shrine,1662.36,115.52,1921.6>
+    HawaKoth:
+      presets: _Shrine<ハワ・カイ,shrine,-4847.04,123.74,3772.63>
+    HiaMiu:
+      presets: _Shrine<ヒャ・ミウ,shrine-double-sword,-4446.8,329.85,-3803.04>
+    HilaRao:
+      presets: _Shrine<ヒロ・ヒラ,shrine,854.73,116.93,838.06>
+    IshtoSoh:
+      presets: _Shrine<イオ・ソオ,shrine,-984.79,321.22,3564.99>
+    JeeNoh:
+      presets: _Shrine<ジノ・ヨー,shrine,-1792.83,112.85,2423.39>
+    JitanSami:
+      presets: _Shrine<ジター・サミ,shrine-blessing,3882.12,572.81,1314.94>
+    JolooNah:
+      presets: _Shrine<ジュニ・シ,shrine,-2004.01,231.65,1674.26>
+    KaamYatak:
+      presets: _Shrine<ヤカー・マタ,shrine,-967.8,127.67,715.89>
+    KahMael:
+      presets: _Shrine<カ・ムー,shrine,4709.2,242.5,-1310.29>
+    KahOkeo:
+      presets: _Shrine<カ・オキョ,shrine,-4120.41,184.29,-414.37>
+    KahYah:
+      presets: _Shrine<マ・カヤ,shrine,3436.89,120.68,3316.28>
+    KamUrog:
+      presets: _Shrine<カム・ユオ,shrine,2501.03,119.17,1494.84>
+    KamiaOmuna:
+      presets: _ShrineDlc<カミラ・オムナ,shrine-dlc,2128.36,509.92,-3228.81>
+    KaoMakagh:
+      presets: _Shrine<カオ・マカ,shrine,523.29,178.91,3526.27>
+    KatahChuki:
+      presets: _Shrine<カタ・チュキ,shrine-double-sword,-636.41,128.87,-345.11>
+    KatosaAug:
+      presets: _Shrine<カツ・トサ,shrine,4295.79,237.42,-2730.34>
+    KayNoh:
+      presets: _Shrine<ケー・ノイ,shrine,-2810.96,172.01,2300.08>
+    KayaWan:
+      presets: _Shrine<カヤ・ミワ,shrine,824.21,132.88,187.79>
+    KayraMah:
+      presets: _Shrine<ケハ・ラマ,shrine,2076.82,520.77,-2039.77>
+    KeeDafunia:
+      presets: _ShrineDlc<キオ・ダフナ,shrine-dlc,4935.17,106.8,-1002.4>
+    KeehaYoog:
+      presets: _Shrine<キハ・ウ,shrine-blessing,-3853.4,640.3,716.7>
+    KeiveTala:
+      presets: _ShrineDlc<ケーベ・タワ,shrine-dlc,-2339.53,129.5,3901.64>
+    KemaKosassa:
+      presets: _Shrine<キマ・コササ,shrine-double-sword,-4658.48,619.49,904.84>
+    KemaZoos:
+      presets: _Shrine<キマ・ズース,shrine,-4673.53,132.12,1967.79>
+    KenaiShakah:
+      presets: _Shrine<ケニィ・シカ,shrine-double-sword,4194.49,323.11,-856.88>
+    KeoRuug:
+      presets: _Shrine<キヨ・ウー,shrine,470.7,250.15,-2168.79>
+    KetohWawai:
+      presets: _Shrine<キト・ワワイ,shrine-blessing,283.4,285.3,-3119.6>
+    KiahToza:
+      presets: _ShrineDlc<キハ・トゥサ,shrine-dlc,-2155.49,450.4,-3188.48>
+    KihiroMoh:
+      presets: _ShrineDlc<キヒロテ・モー,shrine-dlc,-3391.23,441.98,1347.84>
+    KorguChideh:
+      presets: _Shrine<クグ・チデ,shrine-blessing,4737.48,218.0,3772.09>
+    KorshOhu:
+      presets: _Shrine<キョシ・オー,shrine-blessing,-2688.6,105.01,2811.2>
+    KuhTakkar:
+      presets: _Shrine<クイ・タッカ,shrine,-3083.0,571.55,1221.0>
+    KuhnSidajj:
+      presets: _Shrine<クン・シダジ,shrine-blessing,17.73,281.4,-1944.4>
+    LaknaRokee:
+      presets: _Shrine<ラーナ・ロキ,shrine-blessing,2040.49,286.03,972.22>
+    LannoKooh:
+      presets: _Shrine<ラノ・クヒー,shrine-blessing,-2636.37,446.03,-2060.36>
+    MaagHalan:
+      presets: _Shrine<マーム・ラノ,shrine-blessing,837.06,282.2,-2419.72>
+    MaagNorah:
+      presets: _Shrine<マ・ノラ,shrine-blessing,-1939.9,249.88,-1458.2>
+    MahEliya:
+      presets: _ShrineDlc<マウ・エルーヤ,shrine-dlc,3762.2,547.78,-646.45>
+    MakaRah:
+      presets: _Shrine<カマ・ラヒ,shrine,-4057.84,94.89,-2508.37>
+    MezzaLo:
+      presets: _Shrine<ミーズー・ヨ,shrine,2621.6,249.39,378.23>
+    MijahRokee:
+      presets: _Shrine<ミッダ・ロキ,shrine-double-sword,-2743.27,309.39,226.44>
+    MirroShaz:
+      presets: _Shrine<ミーロ・ツヒ,shrine,1232.0,127.55,-1212.75>
+    MisaeSuma:
+      presets: _Shrine<ミィ・スゥ,shrine-blessing,-2970.3,137.67,3781.5>
+    MoaKeet:
+      presets: _Shrine<モア・キシト,shrine,2723.5,285.41,-1166.08>
+    MoggLatan:
+      presets: _Shrine<モ・ラタニア,shrine,-2297.43,439.57,460.73>
+    MonyaToma:
+      presets: _Shrine<モンヤ・トマ,shrine,-1488.6,275.22,-1473.03>
+    MozoShenno:
+      presets: _Shrine<ミョス・シノ,shrine-double-sword,-3627.71,420.82,-3038.22>
+    MuwoJeem:
+      presets: _Shrine<ムオ・ジーム,shrine-double-sword,3658.13,350.34,3308.26>
+    MyahmAgana:
+      presets: _Shrine<ミャマ・ガナ,shrine,3388.41,242.59,2215.84>
+    NamikaOzz:
+      presets: _Shrine<ナミカ・オズ,shrine-double-sword,761.29,188.72,-821.3>
+    NeezYohma:
+      presets: _Shrine<ネヅ・ヨマ,shrine,3323.58,239.28,-518.83>
+    NoeRajee:
+      presets: _ShrineDlc<ノイエ・ロジー,shrine-dlc,-3820.27,89.77,-2311.2>
+    NoyaNeha:
+      presets: _Shrine<ニア・ネア,shrine-double-sword,-951.18,134.36,-623.76>
+    PumaagNitae:
+      presets: _Shrine<プマ・ニット,shrine-double-sword,559.53,118.04,2990.19>
+    QazaTokki:
+      presets: _Shrine<カザ・トッキ,shrine-blessing,-820.5,341.3,-3535.0>
+    QuaRaym:
+      presets: _Shrine<キュ・ラムヒ,shrine,1820.74,388.29,-1517.04>
+    QukahNata:
+      presets: _Shrine<キュカ・ナタ,shrine-blessing,2007.0,301.5,3285.0>
+    RaqaZunzo:
+      presets: _Shrine<ラキュ・ウロ,shrine-blessing,-3810.5,159.3,3127.2>
+    ReeDahee:
+      presets: _Shrine<リ・ダヒ,shrine,1271.93,137.68,1843.74>
+    RinOyaa:
+      presets: _Shrine<リ・モナ,shrine,-1721.37,335.74,-2554.46>
+    RinuHonika:
+      presets: _ShrineDlc<リノ・ヒミカ,shrine-dlc,2241.35,541.82,-1995.7>
+    RitaagZumo:
+      presets: _Shrine<リター・ズモ,shrine-blessing,4524.6,107.77,-2127.5>
+    RohtaChigah:
+      presets: _ShrineDlc<ロヒッタ・チグ,shrine-dlc,-517.17,173.8,1798.4>
+    RokUwog:
+      presets: _Shrine<ラー・クア,shrine,-2378.01,485.91,-3224.74>
+    RonaKachta:
+      presets: _Shrine<ロナ・カータ,shrine-blessing,-1088.16,22.05,-2661.51>
+    RotaOoh:
+      presets: _Shrine<ルヨ・タウ,shrine,-1563.25,186.73,1310.07>
+    RuccoMaag:
+      presets: _Shrine<ルッコ・マ,shrine,3333.5,119.0,401.5>
+    RuvoKorbah:
+      presets: _ShrineDlc<ルネ・コリバー,shrine-dlc,-834.56,189.8,2145.07>
+    SaasKosah:
+      presets: _Shrine<サス・コサ,shrine-double-sword,-147.4,144.22,-1159.35>
+    SahDahaj:
+      presets: _Shrine<サ・ダージュ,shrine,2665.21,247.91,-1580.75>
+    SasaKai:
+      presets: _Shrine<ササ・カイ,shrine-double-sword,-3559.8,352.78,1953.0>
+    SatoKoda:
+      presets: _ShrineDlc<サタ・カダ,shrine-dlc,3102.94,542.91,-833.22>
+    ShaGehma:
+      presets: _Shrine<シャ・ゲマ,shrine,-1673.17,346.57,-3758.45>
+    ShaWarvo:
+      presets: _Shrine<シャ・タワ,shrine,-3823.08,265.12,-2206.36>
+    ShadaNaw:
+      presets: _Shrine<シャダ・アダ,shrine,-2998.62,667.75,-3221.58>
+    ShaeKatha:
+      presets: _Shrine<シ・クチョフ,shrine-blessing,870.34,122.99,2328.54>
+    ShaeLoya:
+      presets: _Shrine<シャオ・ヨ,shrine,-2930.92,306.45,-432.05>
+    ShaeMosah:
+      presets: _Shrine<シモ・イトセ,shrine,1757.22,535.32,-2562.46>
+    ShaiUtoh:
+      presets: _Shrine<サイ・ウート,shrine,1586.72,166.99,3614.93>
+    ShaiYota:
+      presets: _Shrine<シ・ヨタ,shrine-blessing,4245.54,110.92,252.95>
+    SharoLun:
+      presets: _ShrineDlc<シャド・ロン,shrine-dlc,2932.71,630.51,-2418.1>
+    SheeVaneer:
+      presets: _Shrine<シベ・ニーロ,shrine,1265.27,525.87,1938.7>
+    SheeVenath:
+      presets: _Shrine<シベ・ニャス,shrine,1244.13,443.37,1850.3>
+    SheemDagoze:
+      presets: _Shrine<シ・ダゴズ,shrine,-1893.3,212.4,91.5>
+    ShehRata:
+      presets: _Shrine<シェモ・ラタ,shrine,1510.45,128.41,-376.96>
+    ShiraGomar:
+      presets: _ShrineDlc<シリト・ゲオマ,shrine-dlc,-2376.74,264.97,-1382.98>
+    ShoDantu:
+      presets: _Shrine<シ・ジト,shrine,-3911.26,396.0,1653.8>
+    ShodaSah:
+      presets: _Shrine<ショダ・サー,shrine,1790.48,189.8,2991.89>
+    ShoqaTatone:
+      presets: _Shrine<シ・タタンケ,shrine-double-sword,94.0,110.67,3841.0>
+    ShoraHah:
+      presets: _Shrine<ショラ・ハ,shrine,1535.38,507.33,-3118.03>
+    SohKofi:
+      presets: _Shrine<サオ・コヒ,shrine-double-sword,2238.42,148.48,-293.04>
+    SumaSahma:
+      presets: _Shrine<スマ・サマ,shrine-blessing,-1418.2,545.4,3448.3>
+    TahMuhl:
+      presets: _Shrine<タ・ムール,shrine,2300.66,213.35,-941.32>
+    TakamaShiri:
+      presets: _ShrineDlc<タタカマ・シミリ,shrine-dlc,-4895.49,141.98,2155.5>
+    TalohNaeg:
+      presets: _Shrine<タロ・ニヒ,shrine-sword,1841.92,260.1,890.4>
+    TahnoOah:
+      presets: _Shrine<ターノ・ア,shrine-blessing,4181.78,288.15,1686.73>
+    TawaJinn:
+      presets: _Shrine<タワ・ジヌ,shrine-blessing,2637.53,318.17,2834.39>
+    TenaKosah:
+      presets: _Shrine<ティナ・キョザ,shrine-double-sword,-3465.47,384.49,-447.97>
+    ThoKayu:
+      presets: _Shrine<ト・カユー,shrine-blessing,-4799.14,135.13,2800.18>
+    ToQuomo:
+      presets: _Shrine<ト・クモ,shrine-blessing,-4023.13,288.09,-3711.64>
+    TohYahsa:
+      presets: _Shrine<トー・ヤッサ,shrine,-2269.1,216.58,-900.1>
+    TotoSah:
+      presets: _Shrine<トト・イサ,shrine,1845.65,131.51,2474.15>
+    TuKaloh:
+      presets: _Shrine<トゥ・カロ,shrine-blessing,4655.0,237.4,-3710.0>
+    TutsuwaNima:
+      presets: _Shrine<ツツア・ニマ,shrine-double-sword,3777.82,108.89,-2704.89>
+    VooLota:
+      presets: _Shrine<ウータ・ド,shrine,-4016.18,275.2,-1721.91>
+    WahgoKatta:
+      presets: _Shrine<ワゴ・カタ,shrine,344.91,123.08,1007.03>
+    YaNaga:
+      presets: _Shrine<ヤ・ナーガ,shrine,-328.18,68.02,2600.29>
+    YahRin:
+      presets: _Shrine<ヤオ・マーヨ,shrine,2833.36,152.75,3310.97>
+    YowakaIta:
+      presets: _ShrineDlc<ヨーワカ・イルタ,shrine-dlc,-941.14,187.7,1672.45>
+    ZaltaWa:
+      presets: _Shrine<キワ・ザタス,shrine,-1432.3,138.32,-594.19>
+    ZeKasho:
+      presets: _Shrine<ジズ・カフィ,shrine,3027.31,348.65,-1667.85>
+    ZunaKai:
+      presets: _Shrine<ヅナ・カイ,shrine-blessing,3324.46,298.69,-3420.44>
+

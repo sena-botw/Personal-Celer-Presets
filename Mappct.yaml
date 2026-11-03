@@ -1,0 +1,52 @@
+presets:
+  MappctCalculate:
+    vars:
+      - map-pct-items: $(0)
+      - map-pct-items: .add(counter-location)
+      - map-pct-items: .add(counter-korok)
+      - map-pct-items: .add(counter-tower)
+      - map-pct-items: .add(counter-shrine)
+      - _x: .var(counter-dlc-shrine)
+      - _x: .mul(with-dlc)
+      - map-pct-items: .add(_x)
+      - map-pct-items: .add(counter-calamity-ganon)
+      - map-pct-items: .add(counter-dark-beast-ganon)
+      - map-pct-items: .add(counter-divine-beast-done)
+      - map-pct-items: .add(counter-divine-beast-enter)
+      - _y: .var(counter-mazkoshia)
+      - _y: .mul(with-dlc)
+      - map-pct-items: .add(_y)
+      - map-pct: .var(map-pct-items)
+      - map-pct: .div(map-pct-items-total)
+      - _z: .var(map-pct)
+      - map-pct: .mul(100)
+      - map-mul-100: .var(map-pct)
+      - map-mul-100: .mul(100)
+      - map-mul-100: .sub(0.5) # pad:lastの処理で数値が整数に四捨五入されることの調整
+      - map-floor: .var(map-pct)
+      - map-floor: .sub(0.5) # pad:lastの処理で数値が整数に四捨五入されることの調整
+
+  Map%:
+    presets: _MappctCalculate<0>
+    $(0): '$(1) Map%: .var(pad 3:last3:map-floor).val(.).var(pad02:last2:map-mul-100).val(%) $(2)'
+
+  _Map%:
+    _addTower:
+      Fraction:
+        presets: _MappctCalculate<1>
+        $(0): '$(1) .var(map-pct-items)/.var(map-pct-items-total) $(2)'
+
+      _Fraction:
+        Decimal:
+          presets: _MappctCalculate<1>
+          $(0): '$(1) .var(map-pct-items)/.var(map-pct-items-total)=.var(_z) $(2)'
+
+    Fraction:
+      presets: _MappctCalculate<0>
+      $(0): '$(1) .var(map-pct-items)/.var(map-pct-items-total) $(2)'
+
+    Warp:
+      presets:
+        - _MappctCalculate<0>
+        - _Warp::$(0)
+      comment: '.dir([$(1)]) - Map%: .var(pad 3:last3:map-floor).val(.).var(pad02:last2:map-mul-100).val(%) $(2)'

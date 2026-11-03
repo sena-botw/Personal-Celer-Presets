@@ -1,0 +1,161 @@
+icons:
+  medoh: https://icons.pistonite.org/icon/location.medoh.none.568c28.c8e6af.568c28.fdfdfd.568c28.fdfdfd.png
+  medoh-enter: https://icons.pistonite.org/icon/location.medoh.none.8c5e28.ffffb5.8c5e28.ffffb5.8c5e28.ffffb5.png
+  medoh-ex: https://icons.pistonite.org/icon/location.medoh.plus.568c28.c8e6af.568c28.fdfdfd.568c28.fdfdfd.png
+  naboris: https://icons.pistonite.org/icon/location.naboris.none.8c5e28.ffffb5.8c5e28.fdfdfd.8c5e28.fdfdfd.png
+  naboris-enter: https://icons.pistonite.org/icon/location.naboris.none.8c5e28.ffffb5.8c5e28.ffffb5.8c5e28.ffffb5.png
+  naboris-ex: https://icons.pistonite.org/icon/location.naboris.plus.8c5e28.ffffb5.8c5e28.fdfdfd.8c5e28.fdfdfd.png
+  ruta: https://icons.pistonite.org/icon/location.ruta.none.69a2d5.c1fefe.69a2d5.fdfdfd.69a2d5.fdfdfd.png
+  ruta-enter: https://icons.pistonite.org/icon/location.ruta.none.8c5e28.ffffb5.8c5e28.ffffb5.8c5e28.ffffb5.png
+  ruta-ex: https://icons.pistonite.org/icon/location.ruta.plus.69a2d5.c1fefe.69a2d5.fdfdfd.69a2d5.fdfdfd.png
+  rudania: https://icons.pistonite.org/icon/location.rudania.none.d57b69.fec1d3.d57b69.fdfdfd.d57b69.fdfdfd.png
+  rudania-enter: https://icons.pistonite.org/icon/location.rudania.none.8c5e28.ffffb5.8c5e28.ffffb5.8c5e28.ffffb5.png
+  rudania-ex: https://icons.pistonite.org/icon/location.rudania.plus.d57b69.fec1d3.d57b69.fdfdfd.d57b69.fdfdfd.png
+  ganon: https://icons.pistonite.org/icon/character.ganon.none.f24c99.ffc0fa.f24c99.ffc0fa.f24c99.ffc0fa.png
+  talus: https://icons.pistonite.org/icon/misc.monster.none.8c5e28.ff9900.8c5e28.ff9900.8c5e28.ff9900.png
+  talus-luminous: https://icons.pistonite.org/icon/misc.monster.circle.8c5e28.ff9900.8c5e28.ff9900.8c5e28.fdfdfd.png
+  talus-rare: https://icons.pistonite.org/icon/misc.monster.plus.8c5e28.ff9900.8c5e28.ff9900.8c5e28.fdfdfd.png
+  talus-frost: https://icons.pistonite.org/icon/misc.monster.plus.69a2d5.c1fefe.69a2d5.fdfdfd.69a2d5.fdfdfd.png
+  talus-igneo: https://icons.pistonite.org/icon/misc.monster.plus.d57b69.fec1d3.d57b69.fdfdfd.d57b69.fdfdfd.png
+  hinox: https://icons.pistonite.org/icon/misc.monster.none.8c5e28.ffffb5.8c5e28.ffffb5.8c5e28.ffffb5.png
+  hinox-blue: https://icons.pistonite.org/icon/misc.monster.none.568c28.c8e6af.568c28.c8e6af.568c28.c8e6af.png
+  hinox-black: https://icons.pistonite.org/icon/misc.monster.none.d57b69.fec1d3.d57b69.fec1d3.d57b69.fec1d3.png
+  stalnox: https://icons.pistonite.org/icon/misc.monster.none.f24c99.ffc0fa.f24c99.ffc0fa.f24c99.ffc0fa.png
+  molduga: https://icons.pistonite.org/icon/misc.monster.triangle.8c5e28.ffffb5.8c5e28.ffffb5.8c5e28.ffffb5.png
+  molduking: https://icons.pistonite.org/icon/misc.monster.plus.f24c99.ffc0fa.f24c99.ffc0fa.f24c99.ffc0fa.png
+  mazkoshia: https://icons.pistonite.org/icon/character.maz_koshia.none.8c5e28.ff9900.8c5e28.ff9900.8c5e28.ff9900.png
+
+tags:
+  counter-talus:
+    color: black
+    background: orange
+  counter-hinox:
+    color: black
+    background: orange
+  counter-molduga:
+    color: black
+    background: orange
+  counter-boss-dlc:
+    color: black
+    background: orange
+  counter-divine-beast-enter:
+    color: white
+  counter-divine-beast-done:
+    color: white
+  counter-calamity-ganon:
+    color: white
+  counter-dark-beast-ganon:
+    color: white
+    split-type: Dark Beast Ganon
+  counter-mazkoshia:
+    color: white
+    split-type: Maz Koshia
+
+splits:
+  - counter-dark-beast-ganon
+  - counter-mazkoshia
+
+presets:
+  _Boss:
+    CalamityGanon:
+      test: 厄災ガノン
+      counter: .var(counter-calamity-ganon)
+      icon: ganon
+      icon-priority: 0
+      coord: [-254.00, 191.01, -1061.37]
+    DarkBeastGanon:
+      test: 魔獣ガノン
+      counter: .var(counter-dark-beast-ganon)
+      icon: ganon
+      icon-priority: 0
+    MazKoshia:
+      text: 導師ミィズ・キョシア
+      counter: .var(counter-mazkoshia)
+      icon: mazkoshia
+      icon-priority: 0
+    _DivineBeast:
+      Enter:
+        text: $(0)
+        counter: .var(counter-divine-beast-enter)
+        icon: $(1)
+        icon-priority: 0
+      Done:
+        text: $(0)
+        counter: .var(counter-divine-beast-done)
+        icon: $(1)
+        icon-priority: 0
+    VahMedoh:
+      presets: _Boss::DivineBeast::Enter<ヴァ・メドー,medoh-enter>
+      coord: [-3850.5,-2278.5]
+    VahNaboris:
+      presets: _Boss::DivineBeast::Enter<ヴァ・ナボリス,naboris-enter>
+      coord: [-2754.62, 112.53, 3749.44]
+    VahRuta:
+      presets: _Boss::DivineBeast::Enter<ヴァ・ルッタ,ruta-enter>
+      coord: [3662.40, 315.66, -175.42]
+    VahRudania:
+      presets: _Boss::DivineBeast::Enter<ヴァ・ルーダニア,rudania-enter>
+      movements:
+        - to: [2235,-2370]
+        - to: [2502.61, 667.95, -2270.26]
+        - to: [2701.02, 726.21, -2363.06]
+        - to: [2794.50, 774.84, -2657.93]
+    Windblight:
+      presets: _Boss::DivineBeast::Done<風のカースガノン,medoh>
+      coord: [-3614.10, 571.16, -1862.06]
+    Thunderblight:
+      presets: _Boss::DivineBeast::Done<雷のカースガノン,naboris>
+      coord: [-2110.15, 545.51, 2616.95]
+    Waterblight:
+      presets: _Boss::DivineBeast::Done<水のカースガノン,ruta>
+      coord: [2970.18, 462.28, 235.47]
+    Fireblight:
+      presets: _Boss::DivineBeast::Done<炎のカースガノン,rudania>
+      coord: [2451.85, 1007.58, -2559.08]
+    Hinox:
+      text: $(0)
+      counter: .var(counter-hinox)
+      icon: $(1)
+      icon-priority: 1
+    _Hinox:
+      Red:
+        presets: _Boss::Hinox<ヒノックス,hinox>
+      Blue:
+        presets: _Boss::Hinox<青ヒノックス,hinox-blue>
+      Black:
+        presets: _Boss::Hinox<黒ヒノックス,hinox-black>
+      Stal:
+        presets: _Boss::Hinox<スタルヒノックス,stalnox>
+    Talus:
+      text: $(0)
+      counter: .var(counter-talus)
+      icon: $(1)
+      icon-priority: 1
+    _Talus:
+      Stone:
+        presets: _Boss::Talus<イワロック,talus>
+      Luminous:
+        presets: _Boss::Talus<夜光イワロック,talus-luminous>
+      Rare:
+        presets: _Boss::Talus<希少イワロック,talus-rare>
+      Frost:
+        presets: _Boss::Talus<ガチロック,talus-frost>
+      Igneo:
+        presets: _Boss::Talus<マグロック,talus-igneo>
+      _Igneo:
+        Titan:
+          text: メガマグロック
+          counter: .counter-boss-dlc(EX)
+          icon: talus-igneo
+          icon-priority: 1
+    Molduga:
+      text: モルドラジーク
+      counter: .var(counter-molduga)
+      icon: molduga
+      icon-priority: 1
+    Molduking:
+      text: キングラジーク
+      counter: .counter-boss-dlc(EX)
+      icon: molduking
+      icon-priority: 1
+

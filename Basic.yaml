@@ -1,0 +1,120 @@
+icons:
+  weapon: https://icons.pistonite.org/icon/misc.hammer.none.69a2d5.c1fefe.8c5e28.ffffb5.8c5e28.ffffb5.png
+  bow: https://icons.pistonite.org/icon/misc.bow.none.69a2d5.c1fefe.8c5e28.ffffb5.8c5e28.ffffb5.png
+  shield: https://icons.pistonite.org/icon/misc.shield.none.69a2d5.c1fefe.8c5e28.ffffb5.8c5e28.ffffb5.png
+  food: https://icons.pistonite.org/icon/misc.apple.none.69a2d5.c1fefe.8c5e28.ffffb5.8c5e28.ffffb5.png
+  chest: https://icons.pistonite.org/icon/shrine.blessing.none.69a2d5.c1fefe.8c5e28.ffffb5.8c5e28.ffffb5.png
+  chest-special: https://icons.pistonite.org/icon/shrine.blessing.plus.f24c99.ffc0fa.f24c99.ffc0fa.f24c99.ffc0fa.png
+  imp.: https://icons.pistonite.org/icon/shrine.double_sword.none.8c5e28.ff9900.8c5e28.ff9900.8c5e28.ff9900.png
+  load: https://icons.pistonite.org/icon/shrine.double_sword.none.69a2d5.c1fefe.333333.eeeeee.333333.eeeeee.png
+  kill: https://icons.pistonite.org/icon/shrine.double_sword.none.f24c99.ffc0fa.f24c99.ffc0fa.f24c99.ffc0fa.png
+  npc: https://icons.pistonite.org/icon/character.terrako.none.568c28.c8e6af.568c28.fdfdfd.568c28.fdfdfd.png
+  cook: https://icons.pistonite.org/icon/misc.pot.none.69a2d5.c1fefe.8c5e28.ffffb5.8c5e28.ffffb5.png
+  set-time: https://icons.pistonite.org/icon/misc.pot.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+  camera: https://icons.pistonite.org/icon/rune.camera.none.69a2d5.c1fefe.8c5e28.ffffb5.8c5e28.ffffb5.png
+  snap: https://icons.pistonite.org/icon/rune.camera.none.568c28.c8e6af.568c28.c8e6af.568c28.c8e6af.png
+  shop: https://icons.pistonite.org/icon/location.house.circle.8c5e28.ff9900.8c5e28.ff9900.8c5e28.fdfdfd.png
+  mastercyclezero: https://icons.pistonite.org/icon/rune.master_cycle_zero.none.8c5e28.ff9900.8c5e28.ff9900.8c5e28.ff9900.png      
+  king: https://icons.pistonite.org/icon/character.king.none.69a2d5.c1fefe.69a2d5.c1fefe.69a2d5.c1fefe.png
+  link: https://icons.pistonite.org/icon/character.link.none.8c5e28.ff9900.8c5e28.ff9900.8c5e28.ff9900.png
+  hestu: https://icons.pistonite.org/icon/character.hestu.none.568c28.c8e6af.568c28.fdfdfd.568c28.fdfdfd.png
+
+tags:
+  bold:
+    bold: true
+
+  b-red:
+    color: "#dc143c"
+    bold: true
+
+  dir:
+    color: yellow
+
+  b-yellow:
+    color: yellow
+    bold: true
+
+  cyan:
+    color: cyan
+
+  lime:
+    color: lime
+
+  gale:
+    color: black
+    background: "#00dd00"
+
+  fury:
+    color: black
+    background: "#ff9900"
+
+  user-defined-split:
+    background: orange
+    split-type: User Defined
+
+presets:
+  npc:
+    text: $(0)
+    icon: npc
+
+  run:
+    text: 走る .dir([$(0)])
+
+  wb:
+    text: WB .dir([$(0)])
+
+  _wb:
+    square:
+      text: 四角先WB .dir([$(0)])
+
+    speed:
+      text: WBS .dir([$(0)])
+
+    hight:
+      text: WBH .dir([$(0)])
+
+    super:
+      text: WB Super .dir([$(0)])
+
+    midair:
+      text: 空中WB .dir([$(0)])
+
+  weapon:
+    text: $(0)
+    icon: weapon
+
+  bow:
+    text: $(0)
+    icon: bow
+
+  shield:
+    text: $(0)
+    icon: shield
+
+  material:
+    text: $(0) .dir($(1))
+    icon: food
+
+  cook:
+    text: $(0)
+    icon: cook
+
+  chest:
+    text: $(0)
+    icon: chest
+
+  _chest:
+    special:
+      text: $(0)
+      icon: chest-special
+
+  shop:
+    text: $(0)
+    icon: shop
+
+  snap:
+    text: 写真 - $(0)
+    icon: snap
+
+splits:
+  - user-defined-split
