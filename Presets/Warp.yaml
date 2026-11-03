@@ -3,14 +3,14 @@ icons:
 
 presets:
   Warp3:
-    text: 'ワープ. .cyan($(0))'
+    text: 'ワープ: .cyan($(0))'
     icon: warp
     movements:
       - to: [$(1),$(2),$(3)]
         warp: true
     comment: .dir([$(4)])
   Warp:
-    text: 'ワープ. .cyan($(0))'
+    text: 'ワープ: .cyan($(0))'
     icon: warp
     movements:
       - to: [$(1),$(2)]
