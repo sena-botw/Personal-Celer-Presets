@@ -58,13 +58,13 @@ splits:
 presets:
   _Boss:
     CalamityGanon:
-      test: 厄災ガノン
+      text: 厄災ガノン
       counter: .var(counter-calamity-ganon)
       icon: ganon
       icon-priority: 0
       coord: [-254.00, 191.01, -1061.37]
     DarkBeastGanon:
-      test: 魔獣ガノン
+      text: 魔獣ガノン
       counter: .var(counter-dark-beast-ganon)
       icon: ganon
       icon-priority: 0
