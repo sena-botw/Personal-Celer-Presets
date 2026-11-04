@@ -3726,7 +3726,7 @@ presets:
           icon: korok-balloon
         - pop
     F35:
-      presets: _Korok<F35 夜光石,korok>
+      presets: _Korok<F35 像の目の夜光石,korok>
       coord: [1857.43,176.84,3351.67]
     _F35:
       Away:
@@ -3843,7 +3843,7 @@ presets:
           icon: korok-rock-circle
         - pop
     F44:
-      presets: _Korok<F44 リンゴ,korok>
+      presets: _Korok<F44 ヤシの木のリンゴ,korok>
       coord: [2836.96,126.87,3452.76]
     _F44:
       Away:
