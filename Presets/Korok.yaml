@@ -3843,7 +3843,7 @@ presets:
           icon: korok-rock-circle
         - pop
     F44:
-      presets: _Korok<F44 Apple,korok>
+      presets: _Korok<F44 リンゴ,korok>
       coord: [2836.96,126.87,3452.76]
     _F44:
       Away:
